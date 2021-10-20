@@ -1,0 +1,36 @@
+Manish PT/roll no-U-64/PES1UG19CS261
+
+Project #4 
+You need to simulate the working of an airport. 
+Let us consider a small but busy airport with three runways, one always 
+reserved for landing, one for takeoff and the third used for landings unless 
+the landing queue is empty, in which case it can be used for takeoffs. 
+Planes arrive ready to land or ready to take off at random times, 
+so at any given unit of time, the runways may be idle or a plane may be landing or taking off and there
+may be several planes waiting either to land or take off. 
+The simulation should run through many units of time 
+  
+
+program structure:
+starts from main function
+asks for a value regarding the units of time the simulation has to run through
+laps function is called
+enters the loop for specified units of time of simulation
+within the loop
+
+	UNDER LAPS FUNCTION
+USE THE srand() FUNCTION DEPENDING ON THE COMPILER IN USE (read the comments in the laps function for further info)
+the srand function generates different set of random numbers each time the program runs, for randomising the incoming and outgoing plane probablities 
+
+creates linked lists and stores the information of planes in tkoff and landing queue by calling genmemory function
+and calls the output function for simulation by the automated control tower
+repeats specified number of times
+comes out of the loop
+exits the laps function
+prints the summary of simulation in main function
+the program terminates
+
+output:
+in the output screenshots, program is running with plane arrival or takeoff frequency of 45,
+ it can be changed to any value which is a multiple of 5.
+(can be changed in the laps function.)
